@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "../../components/header"
+import Navbar from "../../components/navbar/navbar"
 
 import "./indexLayout.scss"
 
@@ -26,7 +26,7 @@ const IndexLayout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Navbar siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,

@@ -2,7 +2,7 @@ import React from "react"
 
 import IndexLayout from "../layouts/index/indexLayout"
 import Image from "../components/image"
-import SEO from "../components/seo"
+import SEO from "../components/seo/seo"
 
 const IndexPage = () => (
   <IndexLayout>
