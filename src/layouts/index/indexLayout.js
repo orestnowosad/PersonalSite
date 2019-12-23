@@ -9,11 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "../components/header"
+import Header from "../../components/header"
 
-import "./layout.scss"
+import "./indexLayout.scss"
 
-const Layout = ({ children }) => {
+const IndexLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -46,8 +46,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
+IndexLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default IndexLayout

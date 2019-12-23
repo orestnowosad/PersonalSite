@@ -1,11 +1,11 @@
 import React from "react"
 
-import Layout from "../layouts/layout"
+import IndexLayout from "../layouts/index/indexLayout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <IndexLayout>
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
@@ -13,7 +13,7 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-  </Layout>
+  </IndexLayout>
 )
 
 export default IndexPage
