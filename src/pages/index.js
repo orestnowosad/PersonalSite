@@ -1,6 +1,6 @@
 import React from "react"
 
-import IndexLayout from "../layouts/index/indexLayout"
+import IndexLayout from "../components/layouts/index/indexLayout"
 import Image from "../components/image"
 import SEO from "../components/seo/seo"
 

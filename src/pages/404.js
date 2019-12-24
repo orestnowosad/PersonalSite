@@ -1,14 +1,14 @@
 import React from "react"
 
-import IndexLayout from "../layouts/index/indexLayout"
+import E404Layout from "../components/layouts/errors/e404Layout"
 import SEO from "../components/seo/seo"
 
 const NotFoundPage = () => (
-  <IndexLayout>
+  <E404Layout>
     <SEO title="404: Page Not Found" />
     <h1>404: NOT FOUND</h1>
     <p>This page does not exist.</p>
-  </IndexLayout>
+  </E404Layout>
 )
 
 export default NotFoundPage
