@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "../../navbar/navbar"
 
-import "./indexLayout.scss"
+import "../../../assets/scss/layouts/indexLayout.scss"
 
 const IndexLayout = ({ children }) => {
   const data = useStaticQuery(graphql`

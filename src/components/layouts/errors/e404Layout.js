@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "./e404Layout.scss"
+import "../../../assets/scss/layouts/e404Layout.scss"
 
 const E404Layout = ({ children }) => {
   return (
