@@ -8,9 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "../../../assets/scss/layouts/e404Layout.scss"
-
-const E404Layout = ({ children }) => {
+const ErrorLayout = ({ children }) => {
   return (
     <>
       <div>
@@ -20,8 +18,8 @@ const E404Layout = ({ children }) => {
   )
 }
 
-E404Layout.propTypes = {
+ErrorLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default E404Layout
+export default ErrorLayout

@@ -7,26 +7,15 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Navbar from "../../navbar/navbar"
+import Navbar from "../navbar/navbar"
 
-import "../../../assets/scss/layouts/indexLayout.scss"
-
-const IndexLayout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const PageLayout = ({ children }) => {
+  const siteTitle = "Orest Nowosad"
 
   return (
     <>
-      <Navbar siteTitle={data.site.siteMetadata.title} />
+      <Navbar siteTitle={siteTitle} />
       <div
         style={{
           margin: `0 auto`,
@@ -46,8 +35,8 @@ const IndexLayout = ({ children }) => {
   )
 }
 
-IndexLayout.propTypes = {
+PageLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default IndexLayout
+export default PageLayout
