@@ -1,5 +1,7 @@
 @import '../mixins/fonts';
 
 @include google-font("Roboto:100,300,400,500,700,900");
+@include google-font("Orbitron:900");
+@include google-font("Yellowtail");
 
 @include local-font("Streamster", "streamster-webfont");

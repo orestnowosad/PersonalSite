@@ -1,0 +1,19 @@
+@mixin image() {
+
+}
+
+@mixin background($img-path,
+                  $position: 0 0,
+                  $size: cover,
+                  $repeat: no-repeat,
+                  $blend-mode: multiply,
+                  $rgba: rgba(0, 0, 0, 0.3)) {
+  background: {
+    image: url($img-path);
+    position: $position;
+    size: $size;
+    repeat: $repeat;
+    blend-mode: $blend-mode;
+    color: $rgba;
+  }
+}
