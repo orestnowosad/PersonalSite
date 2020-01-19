@@ -1,61 +1,89 @@
-.person {
-  position: absolute;
-  width: 32em;
-  height: 12em;
-  top: 60%;
-  left: 50%;
-  margin-left: -16em;
-  margin-top: -6em;
+@import '../assets/scss/base/colors';
+
+.logo {
+  margin-bottom: 1em;
+
+  img {
+    height: 8em;
+  }
 }
 
-.name {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5em;
-  font-weight: 1000;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-  color: #C6CBF5;
-  background: -webkit-linear-gradient(top, #151c60, #c6cbf5 40%, #000 0, #e1a0ce 65%, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
-  z-index: 2;
-}
+.intro {
+  text-align: left;
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 1.25em;
+  margin: 0.25em 0;
 
-.title {
-  display: block;
-  font-family: 'Yellowtail', serif;
-  font-size: 3em;
-  margin: 0;
-  color: #d100b1;
-  text-shadow: 0 0 1px #d100b1, 0 -3px 3px hsla(0, 0%, 100%, 0.8), 0 3px 3px rgba(0, 0, 0, 0.5), 0 0 15px #d100b1, 0 0 45px rgba(209, 0, 177, 0.8);
-  text-align: center;
-  text-decoration: underline;
-  text-transform: none;
-  -webkit-transform: skew(-10deg) rotate(-10deg);
-  transform: skew(-10deg) rotate(-10deg);
-  top: 2rem;
-  z-index: 3;
-}
-
-.triangle {
-  fill: url(#grad1);
-  -webkit-filter: url(#dropshadow);
-  filter: url(#dropshadow);
-  position: relative;
-  stroke-dasharray: 1200;
-  stroke-dashoffset: 1200;
-  z-index: 1;
-
-  .offset0 {
-    stop-color: rgb(50, 50, 50);
-    stop-opacity: 1;
+  span {
+    display: block;
   }
 
-  .offset100 {
-    stop-color: #000;
-    stop-opacity: 1;
+  .specialization {
+    color: $orange;
+  }
+}
+
+.nav, .social {
+  display: inline-block;
+  margin-top: 4em;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    margin: 0;
+  }
+}
+
+.nav {
+  float: left;
+
+  a {
+    position: relative;
+    font-size: 1.2em;
+    color: $black;
+    margin-right: 1em;
+    padding-bottom: 0.4em;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: $black;
+      transform-origin: bottom right;
+      transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.social {
+  float: right;
+
+  .socialLink {
+    margin-left: 1em;
+    padding-bottom: 0.4em;
+
+    img {
+      height: 1.5em;
+      opacity: 0.4;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+      }
+    }
   }
 }

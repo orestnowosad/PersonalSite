@@ -13,10 +13,12 @@ import styles from "./indexLayout.module.scss"
 const IndexLayout = ({ children }) => {
   return (
     <>
-      <div className={styles.layout}>
-        <main>
-          {children}
-        </main>
+      <div className={styles.page}>
+        <div className={styles.container}>
+          <main className={styles.header}>
+            {children}
+          </main>
+        </div>
       </div>
     </>
   )

@@ -3,17 +3,16 @@
 }
 
 @mixin background($img-path,
-                  $position: 0 0,
+                  $position: center,
                   $size: cover,
                   $repeat: no-repeat,
                   $blend-mode: multiply,
-                  $rgba: rgba(0, 0, 0, 0.3)) {
+                  $rgba: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))) {
   background: {
-    image: url($img-path);
+    image: url($img-path), $rgba;
     position: $position;
     size: $size;
     repeat: $repeat;
     blend-mode: $blend-mode;
-    color: $rgba;
   }
 }

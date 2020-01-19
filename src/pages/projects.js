@@ -6,15 +6,15 @@ import SEO from "../components/seo/seo"
 
 import styles from "./page.module.scss";
 
-const ExperiencePage = () => (
+const ProjectsPage = () => (
   <PageLayout>
-    <SEO title="About" />
-    <h1 className={styles.header}>Experience</h1>
-    <p>Cool places I've worked at.</p>
+    <SEO title="Projects" />
+    <h1 className={styles.header}>Cool shit that I've built.</h1>
+    <p>Real cool shit.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
   </PageLayout>
 )
 
-export default ExperiencePage
+export default ProjectsPage
