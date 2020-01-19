@@ -1,0 +1,83 @@
+@import '../../assets/scss/base/colors';
+
+.footer {
+  background-color: $lightgrey;
+  padding: 8em 0;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  max-width: 48em;
+  margin: 0 auto;
+}
+
+.logo {
+  position: relative;
+  margin-top: -1.5em;
+
+  img {
+    height: 6em;
+  }
+}
+
+.name {
+  font-weight: 700;
+}
+
+.navLinks {
+  a {
+    position: relative;
+    color: $black;
+    text-decoration: none;
+    padding-bottom: 0.4em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: $black;
+      transform-origin: bottom right;
+      transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.heading {
+  font-weight: 700;
+}
+
+.email {
+  &::before {
+    content: attr(data-website) "\0040" attr(data-user);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+}
+
+.social {
+  .socialLink {
+    margin-right: 1em;
+
+    img {
+      height: 1.5em;
+      opacity: 0.4;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
