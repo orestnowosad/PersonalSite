@@ -27,9 +27,6 @@ const IndexPage = () => (
     <div className={styles.links}>
       <nav className={styles.nav}>
         <p>
-          <Link to="/">
-            Home
-          </Link>
           <Link to="/about">
             About
           </Link>
@@ -43,13 +40,13 @@ const IndexPage = () => (
       </nav>
       <div className={styles.social}>
         <p>
-          <a className={styles.socialLink} target="_blank" rel="noopener noreferrer" href="https://twitter.com/orestnowosad">
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/orestnowosad">
             <img src={twitter} alt="Twitter" />
           </a>
-          <a className={styles.socialLink} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/orestnowosad/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/orestnowosad/">
             <img src={linkedin} alt="LinkedIn" />
           </a>
-          <a className={styles.socialLink} target="_blank" rel="noopener noreferrer" href="https://github.com/orestnowosad">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/orestnowosad">
             <img src={github} alt="GitHub" />
           </a>
         </p>
