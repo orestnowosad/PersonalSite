@@ -15,15 +15,21 @@
 
 .logo {
   position: relative;
-  margin-top: -1.5em;
+  margin-top: -1.25em;
 
   img {
-    height: 6em;
+    height: 4em;
   }
 }
 
 .name {
   font-weight: 700;
+  margin-top: 0.8em;
+  margin-bottom: 0.25em;
+}
+
+.title {
+  margin: 0;
 }
 
 .navLinks {
