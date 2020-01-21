@@ -11,6 +11,8 @@ import PropTypes from "prop-types"
 import Header from "../header/header"
 import Footer from "../footer/footer"
 
+import styles from "./pageLayout.module.scss"
+
 const PageLayout = ({ children }) => {
   const siteTitle = "Orest Nowosad"
   const siteDescription = "Software Developer"
@@ -18,7 +20,7 @@ const PageLayout = ({ children }) => {
   return (
     <>
       <Header siteTitle={siteTitle} />
-      <div>
+      <div className={styles.container}>
         <main>{children}</main>
       </div>
       <Footer siteTitle={siteTitle} siteDescription={siteDescription} />
