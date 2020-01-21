@@ -22,7 +22,7 @@ const AboutPage = () => (
             presence. I enjoy empowering the little guy, and technology is the way that I do that.
           </p>
           <p>
-            Peep the resume.
+            Check the resume.
           </p>
         </div>
         <a target="_blank" rel="noopener noreferrer" href={resume}>
