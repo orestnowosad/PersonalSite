@@ -1,19 +1,19 @@
 @import '../assets/scss/base/colors';
 
 .logo {
-  margin-bottom: 1em;
+  margin-bottom: 8vh;
 
   img {
-    height: 8em;
+    height: 4em;
   }
 }
 
 .intro {
   text-align: left;
   font-weight: 700;
-  font-size: 4em;
-  line-height: 1.25em;
-  margin: 0.25em 0;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 0;
 
   span {
     display: block;
@@ -25,26 +25,17 @@
 }
 
 .nav, .social {
-  display: inline-block;
-  margin-top: 4em;
-
-  p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4em;
-    margin: 0;
-  }
+  display: block;
+  margin-top: 8vh;
 }
 
 .nav {
-  float: left;
-
   a {
+    display: block;
     position: relative;
     font-size: 1.2em;
     color: $black;
-    margin-right: 1em;
+    margin-bottom: 0.25em;
     padding-bottom: 0.4em;
     text-decoration: none;
 
@@ -69,10 +60,8 @@
 }
 
 .social {
-  float: right;
-
   a {
-    margin-left: 1em;
+    margin-right: 1.5em;
     padding-bottom: 0.4em;
 
     img {
@@ -84,6 +73,53 @@
         opacity: 1;
         transition: 0.3s ease-in-out;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-bottom: 1em;
+
+    img {
+      height: 8em;
+    }
+  }
+
+  .intro {
+    font-size: 4em;
+    line-height: 1.25em;
+    margin: 0.25em 0;
+  }
+
+  .nav, .social {
+    display: inline-block;
+    margin-top: 4em;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 4em;
+      margin: 0;
+    }
+  }
+
+  .nav {
+    float: left;
+
+    a {
+      margin-right: 1em;
+      margin-bottom: 0;
+    }
+  }
+
+  .social {
+    float: right;
+
+    a {
+      margin-right: 0;
+      margin-left: 1em;
     }
   }
 }

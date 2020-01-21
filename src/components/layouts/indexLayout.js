@@ -15,7 +15,7 @@ const IndexLayout = ({ children }) => {
     <>
       <div className={styles.page}>
         <div className={styles.container}>
-          <main className={styles.header}>
+          <main>
             {children}
           </main>
         </div>
