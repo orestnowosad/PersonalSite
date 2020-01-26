@@ -14,23 +14,20 @@ const AboutPage = () => (
     <SEO title="About" />
     <h1>About</h1>
     <div className={styles.intro}>
-      <div>
-        <div className={styles.description}>
-          <p>
-            Hey there, I'm Orest, a software developer with over 1.5 years of experience helping
-            small businesses grow their business outreach through the development of their online
-            presence. I enjoy empowering the little guy, and technology is the way that I do that.
-          </p>
-          <p>
-            Check the resume.
-          </p>
-        </div>
-        <a target="_blank" rel="noopener noreferrer" href={resume}>
-          Resume
-        </a>
-      </div>
-      <div>
+      <div className={styles.profileImage}>
         <img src={profilePhoto} alt="Orest Nowosad" />
+      </div>
+      <div className={styles.description}>
+        <p>
+          Hey there, I'm Orest, a software developer with over 1.5 years of experience helping
+          small businesses grow their business outreach through the development of their online
+          presence. I enjoy empowering the little guy, and technology is the way that I do that.
+        </p>
+        <div className={styles.resume}>
+          <a target="_blank" rel="noopener noreferrer" href={resume}>
+            Resume
+          </a>
+        </div>
       </div>
     </div>
     <hr className={styles.divider} />
@@ -76,7 +73,7 @@ const AboutPage = () => (
         <div className={styles.posting}>
           <div>
             <p className={styles.title}>Adaptive Cruise Control Lead</p>
-            <p className={styles.location}>McMaster Solar Car Project &mdash; Hamilton, Ontario</p>
+            <p className={styles.location}>McMaster Solar Car &mdash; Hamilton, Ontario</p>
           </div>
           <div>
             <p className={styles.date}>June 2017 &mdash; October 2017</p>
