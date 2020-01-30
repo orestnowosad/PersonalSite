@@ -10,13 +10,13 @@ import twitter from "../assets/images/icons/twitter.svg"
 import linkedin from "../assets/images/icons/linkedin-badge.svg"
 import github from "../assets/images/icons/github-badge.svg"
 
-import logo from "../assets/images/brand/logo.svg"
+import brandBlack from "../assets/images/brand/brand-black.svg"
 
 const IndexPage = () => (
   <IndexLayout>
     <SEO title="Home" />
     <div className={styles.logo}>
-      <img src={logo} alt="Brand logo" />
+      <img src={brandBlack} alt="Brand logo" />
     </div>
     <h1 className={styles.intro}>
       <span>I'm Orest &mdash;</span>

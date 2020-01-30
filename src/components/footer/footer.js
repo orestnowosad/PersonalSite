@@ -8,14 +8,14 @@ import twitter from "../../assets/images/icons/twitter.svg"
 import linkedin from "../../assets/images/icons/linkedin-badge.svg"
 import github from "../../assets/images/icons/github-badge.svg"
 
-import logo from "../../assets/images/brand/logo.svg"
+import brandBlack from "../../assets/images/brand/brand-black.svg"
 
 const Footer = ({ siteTitle, siteDescription }) => (
   <footer className={styles.footer}>
     <div className={styles.container}>
       <div>
         <div className={styles.logo}>
-          <img src={logo} alt="Brand logo" />
+          <img src={brandBlack} alt="Brand logo" />
         </div>
         <p className={styles.name}>{siteTitle}</p>
         <p className={styles.title}>{siteDescription}</p>
