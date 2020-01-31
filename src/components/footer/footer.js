@@ -44,7 +44,7 @@ const Footer = ({ siteTitle, siteDescription }) => (
           </p>
         </div>
       </div>
-      <div>
+      <div className={styles.contact}>
         <p className={styles.heading}>Contact Me</p>
         <p>
           <span className={styles.email} data-user="tsero.dasowon" data-website="moc.liamg"></span>
