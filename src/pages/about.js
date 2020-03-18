@@ -20,8 +20,10 @@ const AboutPage = () => (
       <div className={styles.description}>
         <p>
           Hey there, I'm Orest, a software developer with over 1.5 years of experience helping
-          small businesses grow their business outreach through the development of their online
-          presence. I enjoy empowering the little guy, and technology is the way that I do that.
+          small businesses grow their business outreach through the development and expansion of
+          their online brand. This mainly involves designing and developing performant, responsive,
+          and cost-efficient websites that fit their needs. I enjoy empowering the little guy, and 
+          technology is the way that I do that.
         </p>
         <div className={styles.resume}>
           <a target="_blank" rel="noopener noreferrer" href={resume}>
