@@ -2,8 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `Orest Nowosad`,
     description: `Software Developer`,
-    author: `@orestnowosad`,
     siteUrl: `https://orestnowosad.ca`,
+    author: {
+      name: `Orest Nowosad`,
+      email: `nowosad.orest@gmail.com`,
+      twitter: `orestnowosad`,
+      github: `orestnowosad`,
+      linkedin: `orestnowosad`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,7 +33,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/brand-icon.png`, // This path is relative to the root of the site.
+        // This path is relative to the root of the site.
+        icon: `src/assets/images/brand-icon.png`,
       },
     },
     `gatsby-plugin-sitemap`,
@@ -42,7 +49,8 @@ module.exports = {
         }],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // this (optional) plugin enables Progressive Web App
+    // + Offline functionality.
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
