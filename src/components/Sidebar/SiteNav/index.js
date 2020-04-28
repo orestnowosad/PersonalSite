@@ -5,8 +5,8 @@ import './style.scss'
 
 function SiteNav() {
   return (
-    <>
-    </>
+    <div className="nav">
+    </div>
   )
 }
 

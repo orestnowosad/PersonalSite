@@ -5,8 +5,8 @@ import './style.scss'
 
 function Social() {
   return (
-    <>
-    </>
+    <div className="social">
+    </div>
   )
 }
 
