@@ -1,13 +1,15 @@
 import React from 'react'
+
 import PropTypes from 'prop-types'
 
-import Layout from '../components/Layout'
+import DefaultLayout from '../components/Layout'
+import SideNav from '../components/SideNav'
 
 function IndexRoute() {
   return (
-    <Layout>
-
-    </Layout>
+    <DefaultLayout>
+      <SideNav />
+    </DefaultLayout>
   )
 }
 

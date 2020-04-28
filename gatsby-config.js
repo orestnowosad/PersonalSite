@@ -3,8 +3,8 @@ module.exports = {
     title: `Orest Nowosad`,
     description: `Software Developer`,
     siteUrl: `https://orestnowosad.ca`,
-    author: {
-      name: `Orest Nowosad`,
+    author: `Orest Nowosad`,
+    social: {
       email: `nowosad.orest@gmail.com`,
       twitter: `orestnowosad`,
       github: `orestnowosad`,
