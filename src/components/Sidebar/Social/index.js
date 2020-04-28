@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function SiteNav() {
+import './style.scss'
+
+function Social() {
   return (
     <>
     </>
   )
 }
 
-export default SiteNav
+export default Social

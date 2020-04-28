@@ -11,6 +11,7 @@ module.exports = {
       linkedin: `orestnowosad`,
     },
   },
+  pathPrefix: `/`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -18,8 +19,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `assets`,
         path: `${__dirname}/src/assets`,
+        name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: `pages`,
       },
     },
     `gatsby-transformer-sharp`,
