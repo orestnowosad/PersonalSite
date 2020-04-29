@@ -1,6 +1,11 @@
-// Normalize
-@import './base/normalize';
+@charset 'utf-8';
+
+// Mixins
+@import './mixins';
+
+// Constants
+@import './colors';
+@import './typography';
 
 // Base
-@import './base/base';
-@import './base/colors';
+@import './base';

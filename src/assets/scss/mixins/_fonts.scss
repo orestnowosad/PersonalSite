@@ -1,0 +1,14 @@
+@charset 'utf-8';
+
+@mixin google-font($name, $weights: '400') {
+  @import url('https://fonts.googleapis.com/css2?family=#{$name}:wght@#{$weights}&display=swap');
+}
+
+@mixin custom-font($name, $file) {
+  @font-face {
+    font-family: $name;
+    src: url('../fonts/#{$file}.woff') format('woff'),
+         url('../fonts/#{$file}.woff2') format('woff2'),
+         url('../fonts/#{$file}.otf') format('opentype');
+  }
+}
