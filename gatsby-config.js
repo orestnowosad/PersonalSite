@@ -4,6 +4,20 @@ module.exports = {
     description: `Software Developer`,
     siteUrl: `https://orestnowosad.ca`,
     author: `Orest Nowosad`,
+    siteNav: [
+      {
+        label: `About`,
+        path: `/about/`,
+      },
+      {
+        label: `Blog`,
+        path: `/blog/`
+      },
+      {
+        label: `Work`,
+        path: `/work/`
+      },
+    ],
     social: {
       email: `nowosad.orest@gmail.com`,
       twitter: `orestnowosad`,

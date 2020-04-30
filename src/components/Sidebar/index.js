@@ -13,8 +13,8 @@ function Sidebar() {
       <Hero />
       <SiteNav />
       <Social />
-      <div>
-        <p>&copy; { new Date().getFullYear() } &mdash; Orest Nowosad</p>
+      <div className="copyright">
+        <p className="copyright__text">&copy; { new Date().getFullYear() } &mdash; Orest Nowosad</p>
       </div>
     </div>
   )

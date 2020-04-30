@@ -22,13 +22,15 @@ function Hero() {
 
   return (
     <div className="hero">
-      <div className=" brand">
-        <Link to="/">
-          <img className="brand-icon" src={ brand } alt="Brand Image" width="75" />
-        </Link>
-      </div>
-      <h1>{ site.siteMetadata.title }</h1>
-      <h2>{ site.siteMetadata.description }</h2>
+      <Link to="/">
+        <img className="hero__brand-image" src={ brand } alt="Brand Image" width="75" />
+      </Link>
+      <h1 className="hero__brand-title">
+        { site.siteMetadata.title }
+      </h1>
+      <h2 className="hero__brand-description">
+        { site.siteMetadata.description }
+      </h2>
     </div>
   )
 }
