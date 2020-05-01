@@ -4,7 +4,19 @@
 
 @charset 'utf-8';
 
+body {
+  background-color: $color-coolgrey-33s-97l;
+  color: $color-coolgrey-24s-16l;
+}
+
 h1 {
+  font-size: 36px;
+  font-family: $font-headline;
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  font-size: 24px;
   font-family: $font-headline;
   font-weight: $font-weight-medium;
 }

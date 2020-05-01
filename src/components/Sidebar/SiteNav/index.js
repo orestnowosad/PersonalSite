@@ -23,7 +23,7 @@ function SiteNav() {
   const siteNav = site.siteMetadata.siteNav
 
   return (
-    <nav className="nav">
+    <nav className="site-nav">
       <ul className="site-nav__list">
         {siteNav.map(item => (
           <li className="site-nav__list-item" key={ item.path }>

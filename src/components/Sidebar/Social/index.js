@@ -38,13 +38,17 @@ function Social() {
     <div className="social">
       <ul className="social__list">
         <li className="social__list-item">
-          <a href={`mailto:${links.email}`}>
+          <a
+            href={`${links.email}`}
+            className="social__list-item-link"
+          >
             <img src={email} />
           </a>
         </li>
         <li className="social__list-item">
           <a
-            href={`https://twitter.com/${links.twitter}`}
+            href={`${links.twitter}`}
+            className="social__list-item-link"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -53,7 +57,8 @@ function Social() {
         </li>
         <li className="social__list-item">
           <a
-            href={`https://github.com/${links.github}`}
+            href={`${links.github}`}
+            className="social__list-item-link"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -62,7 +67,8 @@ function Social() {
         </li>
         <li className="social__list-item">
           <a
-            href={`https://linkedin.com/in/${links.linkedin}`}
+            href={`${links.linkedin}`}
+            className="social__list-item-link"
             target="_blank"
             rel="noopener noreferrer"
           >

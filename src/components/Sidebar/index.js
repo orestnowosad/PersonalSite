@@ -9,7 +9,7 @@ import './style.scss'
 
 function Sidebar() {
   return (
-    <div>
+    <div className="sidebar">
       <Hero />
       <SiteNav />
       <Social />
