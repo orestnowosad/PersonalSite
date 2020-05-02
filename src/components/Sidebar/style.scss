@@ -1,0 +1,22 @@
+/*
+ *  Hero Component
+ */
+
+@import '../../assets/scss/colors';
+@import '../../assets/scss/typography';
+@import '../../assets/scss/mixins/breakpoints';
+
+
+.sidebar {
+  padding: 16px;
+
+  @include for-size(tablet-landscape-up) {
+    padding: 96px;
+  }
+
+  .copyright {
+    &__text {
+      color: $color-coolgrey-12s-43l;
+    }
+  }
+}

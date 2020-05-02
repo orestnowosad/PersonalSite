@@ -30,6 +30,7 @@ function SiteNav() {
             <Link
               to={ item.path }
               className="site-nav__list-item-link"
+              activeClassName="site-nav__list-item-link site-nav__list-item-link--active"
             >
               { item.label }
             </Link>

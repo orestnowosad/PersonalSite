@@ -1,0 +1,32 @@
+/*
+ *  Hero Component
+ */
+
+@import '../../../assets/scss/colors';
+@import '../../../assets/scss/typography';
+@import '../../../assets/scss/mixins/breakpoints';
+
+
+.hero {
+  margin-bottom: 36px;
+
+  &__brand {
+    &-link {
+      &-image {
+        fill: $color-coolgrey-24s-16l;
+        width: 75px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 4px 0;
+    font-size: 24px;
+  }
+
+  &__description {
+    margin: 4px 0;
+    font-size: 18px;
+    color: $color-lightblue-59s-43l;
+  }
+}
