@@ -8,15 +8,24 @@
 
 
 .sidebar {
-  padding: 16px;
+  height: 100vh;
 
   @include for-size(tablet-landscape-up) {
-    padding: 96px;
+    position: fixed;
+    width: 512px;
   }
 
-  .copyright {
-    &__text {
-      color: $color-coolgrey-12s-43l;
+  &__container {
+    padding: 16px;
+
+    @include for-size(tablet-landscape-up) {
+      padding: 96px;
+    }
+
+    .copyright {
+      &__text {
+        color: $color-coolgrey-12s-43l;
+      }
     }
   }
 }

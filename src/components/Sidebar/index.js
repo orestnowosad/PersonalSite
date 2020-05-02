@@ -10,11 +10,13 @@ import './style.scss'
 function Sidebar() {
   return (
     <div className="sidebar">
-      <Hero />
-      <SiteNav />
-      <Social />
-      <div className="copyright">
-        <p className="copyright__text">&copy; { new Date().getFullYear() } &mdash; Orest Nowosad</p>
+      <div className="sidebar__container">
+        <Hero />
+        <SiteNav />
+        <Social />
+        <div className="copyright">
+          <p className="copyright__text">&copy; { new Date().getFullYear() } &mdash; Orest Nowosad</p>
+        </div>
       </div>
     </div>
   )
