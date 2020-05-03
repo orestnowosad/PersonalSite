@@ -9,9 +9,10 @@
 
 .sidebar {
   height: 100vh;
+  box-shadow: 2px 0 12px $color-coolgrey-12s-43l;
 
   @include for-size(tablet-landscape-up) {
-    position: fixed;
+    position: sticky;
     width: 512px;
   }
 
@@ -19,7 +20,7 @@
     padding: 16px;
 
     @include for-size(tablet-landscape-up) {
-      padding: 96px;
+      padding: 96px 16px 96px 176px;
     }
 
     .copyright {

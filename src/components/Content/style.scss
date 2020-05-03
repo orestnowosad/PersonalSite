@@ -1,0 +1,20 @@
+/*
+ *  Content Component
+ */
+
+@import '../../assets/scss/colors';
+@import '../../assets/scss/typography';
+@import '../../assets/scss/mixins/breakpoints';
+
+
+.background {
+  height: 100vh;
+  width: calc(100vw - 512px);
+  background: no-repeat 35% 85% url('../../assets/images/foggy-mountains.jpg');
+}
+
+.content {
+  &__container {
+
+  }
+}

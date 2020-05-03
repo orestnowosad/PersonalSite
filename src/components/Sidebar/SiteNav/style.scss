@@ -33,7 +33,7 @@
         &:hover,
         &:focus {
           color: $color-lightblue-82s-24l;
-          padding-left: 8px;
+          padding-left: 9px;
           transition: 0.3s ease-in-out;
         }
 
@@ -45,12 +45,19 @@
 
           &::before {
             content: '\003c';
-            padding-right: 3px;
+            padding-right: 1px;
           }
 
           &::after {
             content: '\002f\003e';
-            padding-left: 3px;
+            padding-left: 1px;
+          }
+
+          &:hover,
+          &:focus {
+            color: $color-lightblue-82s-24l;
+            padding-left: 0;
+            transition: 0.3s ease-in-out;
           }
         }
       }

@@ -4,9 +4,12 @@ import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import {
+  Content,
   DefaultLayout,
   Sidebar
 } from '../components'
+
+import './style.scss'
 
 
 function IndexRoute(props) {
@@ -32,7 +35,10 @@ function IndexRoute(props) {
         <title>{ site.siteMetadata.title }</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
-      <Sidebar />
+      <div className="page__container">
+        <Sidebar />
+        <Content isIndexPage={ true } />
+      </div>
     </DefaultLayout>
   )
 }
