@@ -35,10 +35,8 @@ function IndexRoute(props) {
         <title>{ site.siteMetadata.title }</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
-      <div className="page__container">
-        <Sidebar />
-        <Content isIndexPage={ true } />
-      </div>
+      <Sidebar />
+      <Content isIndexPage={ true } />
     </DefaultLayout>
   )
 }

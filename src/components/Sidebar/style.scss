@@ -1,26 +1,27 @@
 /*
- *  Hero Component
+ *  Sidebar Component
  */
 
 @import '../../assets/scss/colors';
+@import '../../assets/scss/spacings';
 @import '../../assets/scss/typography';
 @import '../../assets/scss/mixins/breakpoints';
 
 
 .sidebar {
-  height: 100vh;
-  box-shadow: 2px 0 12px $color-coolgrey-12s-43l;
-
   @include for-size(tablet-landscape-up) {
     position: sticky;
-    width: 512px;
+    height: calc(100vh - $margin-global-top);
+    flex-basis: 40%;
   }
 
   &__container {
     padding: 16px;
 
     @include for-size(tablet-landscape-up) {
-      padding: 96px 16px 96px 176px;
+      width: 320px;
+      margin: 0 auto;
+      padding: 0;
     }
 
     .copyright {

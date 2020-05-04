@@ -12,6 +12,8 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import brand from '../../../assets/images/brand-icon.png'
 
+import './style.scss'
+
 function DefaultLayout(props) {
   const { children, location } = props
   const url = location.href ? location.href : ''
@@ -44,7 +46,9 @@ function DefaultLayout(props) {
         <meta name="twitter:image" content={ brand } />
         <meta name="twitter:card" content="summary" />
       </Helmet>
-      { children }
+      <div className="container">
+        { children }
+      </div>
     </>
   )
 }

@@ -1,0 +1,23 @@
+/*
+ *  Default Layout
+ */
+
+@import '../../../assets/scss/spacings';
+@import '../../../assets/scss/mixins/breakpoints';
+
+
+.container {
+  @include for-size(tablet-landscape-up) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 870px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: $margin-global-top;
+  }
+
+  @include for-size(desktop-up) {
+    max-width: 1170px;
+  }
+}

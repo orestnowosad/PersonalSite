@@ -1,3 +1,7 @@
+/*
+ *  Global
+ */
+
 @charset 'utf-8';
 
 // Mixins
@@ -5,6 +9,7 @@
 
 // Constants
 @import './colors';
+@import './spacings';
 @import './typography';
 
 // Base

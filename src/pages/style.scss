@@ -2,12 +2,3 @@
  *  Index Page
  */
 
-@import '../assets/scss/mixins/breakpoints';
-
-
-.page__container {
-  @include for-size(tablet-landscape-up) {
-    display: flex;
-    flex-direction: row;
-  }
-}

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import {
+  Content,
   DefaultLayout,
   Sidebar
 } from '../../components'
@@ -33,6 +34,7 @@ function AboutRoute(props) {
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
       <Sidebar />
+      <Content isIndexPage={ false } />
     </DefaultLayout>
   )
 }
