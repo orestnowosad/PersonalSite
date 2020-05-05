@@ -1,0 +1,27 @@
+/*
+ *  NotFoundError Component
+ */
+
+@import '../../../assets/scss/colors';
+@import '../../../assets/scss/spacings';
+@import '../../../assets/scss/typography';
+@import '../../../assets/scss/mixins/breakpoints';
+
+
+.error {
+  flex-basis: 65%;
+  
+  &__container {
+    margin-top: $margin-error-top;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__details {
+    line-height: 1.65;
+    font-family: $font-article;
+    color: $color-coolgrey-20s-25l;
+  }
+}

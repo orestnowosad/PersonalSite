@@ -5,8 +5,8 @@
 @charset 'utf-8';
 
 @mixin for-size($range) {
-  $phone-upper-boundary: 600px;
-  $tablet-portrait-upper-boundary: 900px;
+  $phone-upper-boundary: 768px;
+  $tablet-portrait-upper-boundary: 1024px;
   $tablet-landscape-upper-boundary: 1200px;
 
   @if $range == phone-only {

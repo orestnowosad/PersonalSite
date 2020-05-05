@@ -4,13 +4,13 @@ import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import {
-  Content,
   DefaultLayout,
+  NotFoundError,
   Sidebar
 } from '../components'
 
 
-function IndexRoute(props) {
+function NotFoundRoute(props) {
   const { location } = props
   const { site } = useStaticQuery(
     graphql`
@@ -27,20 +27,20 @@ function IndexRoute(props) {
 
   return (
     <DefaultLayout
-      location={ location }  
+      location={ location }
     >
       <Helmet>
-        <title>{ site.siteMetadata.title }</title>
+        <title>404: Page Not Found</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
       <Sidebar />
-      <Content isIndexPage={ true } />
+      <NotFoundError />
     </DefaultLayout>
   )
 }
 
-IndexRoute.propTypes = {
+NotFoundRoute.propTypes = {
   location: PropTypes.node.isRequired,
 }
 
-export default IndexRoute
+export default NotFoundRoute

@@ -9,19 +9,27 @@
 
 
 .sidebar {
-  @include for-size(tablet-landscape-up) {
+  @include for-size(tablet-portrait-up) {
     position: sticky;
-    height: calc(100vh - $margin-global-top);
-    flex-basis: 40%;
+    flex-basis: 30%;
   }
 
   &__container {
-    padding: 16px;
+    margin: 0 15px;
 
-    @include for-size(tablet-landscape-up) {
-      width: 320px;
-      margin: 0 auto;
-      padding: 0;
+    &::after {
+      background: linear-gradient(
+        180deg, 
+        $color-coolgrey-16s-82l 0, 
+        $color-coolgrey-16s-82l 48%, 
+        $color-coolgrey-33s-97l);
+      position: absolute;
+      content: '';
+      width: .0625rem;
+      height: 540px;
+      top: 0;
+      right: 0;
+      bottom: 0;
     }
 
     .copyright {
