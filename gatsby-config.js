@@ -1,21 +1,22 @@
 module.exports = {
   siteMetadata: {
     title: `Orest Nowosad`,
+    subtitle: `<Insert subtitle here>`,
     description: `Software Developer`,
     siteUrl: `https://orestnowosad.ca`,
     author: `Orest Nowosad`,
     siteNav: [
       {
         label: `About`,
-        path: `/about/`,
+        path: `/about`,
       },
       {
         label: `Blog`,
-        path: `/blog/`
+        path: `/blog`
       },
       {
         label: `Work`,
-        path: `/work/`
+        path: `/work`
       },
     ],
     social: {

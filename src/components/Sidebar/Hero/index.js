@@ -10,7 +10,7 @@ function Hero() {
         site {
           siteMetadata {
             title
-            description
+            subtitle
           }
         }
       }
@@ -30,8 +30,8 @@ function Hero() {
       <h1 className="hero__title">
         { site.siteMetadata.title }
       </h1>
-      <h2 className="hero__description">
-        { site.siteMetadata.description }
+      <h2 className="hero__subtitle">
+        { site.siteMetadata.subtitle }
       </h2>
     </div>
   )

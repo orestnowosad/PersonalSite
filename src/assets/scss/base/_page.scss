@@ -1,0 +1,23 @@
+/*
+ *  Page
+ */
+
+@charset 'utf-8';
+
+.page {
+  flex-basis: 65%;
+
+  &__container {
+    margin-top: $margin-page-top;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__paragraph {
+    margin-bottom: 18px;
+    line-height: 1.65;
+    font-family: $font-article;
+  }
+}

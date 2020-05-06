@@ -34,7 +34,12 @@ function AboutRoute(props) {
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
       <Sidebar />
-      <Content isIndexPage={ false } />
+      <div className="page">
+        <div className="page__container">
+          <h1 className="page__title">Who is this guy?</h1>
+          <p className="page__paragraph">Just your run-of-the-mill software engineer.</p>
+        </div>
+      </div>
     </DefaultLayout>
   )
 }
