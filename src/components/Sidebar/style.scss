@@ -15,27 +15,19 @@
   }
 
   &__container {
-    margin: 0 15px;
-
-    &::after {
-      background: linear-gradient(
-        180deg, 
-        $color-coolgrey-16s-82l 0, 
-        $color-coolgrey-16s-82l 48%, 
-        $color-coolgrey-33s-97l);
-      position: absolute;
-      content: '';
-      width: .0625rem;
-      height: 540px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
-
     .copyright {
       &__text {
-        color: $color-coolgrey-12s-43l;
+        color: $color-coolgrey-13s-65l;
+        font-size: 14px;
       }
     }
+  }
+
+  &__title {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    text-transform: uppercase;
   }
 }

@@ -8,8 +8,8 @@
 
 
 .site-nav {
-  position: relative;
-  padding: 48px 0;
+  line-height: 1.3;
+  margin-bottom: 48px;
 
   &__list {
     list-style: none;
@@ -20,57 +20,18 @@
       padding: 0;
 
       &-link {
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        color: $color-coolgrey-10s-53l;
-        font-size: 16px;
+        color: $color-lightblue-54s-49l;
+        font-size: 15px;
         font-weight: $font-weight-regular;
         text-decoration: none;
-        padding: 4px 0;
-        transition: 0.2s ease-in-out;
+        transition: 0.15s ease-in-out;
 
         &:hover,
         &:focus {
           color: $color-lightblue-82s-24l;
-          padding-left: 9px;
-          transition: 0.3s ease-in-out;
-        }
-
-        &--active {
-
-          @include for-size(tablet-landscape-up) {
-            color: $color-lightblue-82s-24l;
-          }
-
-          &::before {
-            content: '\003c';
-            padding-right: 1px;
-          }
-
-          &::after {
-            content: '\002f\003e';
-            padding-left: 1px;
-          }
-
-          &:hover,
-          &:focus {
-            color: $color-lightblue-82s-24l;
-            padding-left: 0;
-            transition: 0.3s ease-in-out;
-          }
+          transition: 0.05s ease-in-out;
         }
       }
     }
-  }
-
-  &::before {
-    content: '';
-    background-color: $color-lightblue-68s-35l;
-    height: 2px;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 64px;
   }
 }

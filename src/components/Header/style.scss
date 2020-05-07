@@ -1,0 +1,47 @@
+/*
+ *  Header Component
+ */
+
+@import '../../assets/scss/colors';
+@import '../../assets/scss/typography';
+@import '../../assets/scss/mixins/breakpoints';
+
+.header {
+  margin: 16px 0;
+
+  &__container {
+    max-width: 970px;
+    margin: 0 auto;
+  } 
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+
+  &__image {
+    width: 100px;
+    padding-right: 8px;
+    color: $color-coolgrey-24s-16l;
+  }
+
+  &__text {
+    color: $color-coolgrey-24s-16l;
+    
+    &-title {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    &-subtitle {
+      font-size: 14px;
+      font-weight: $font-weight-regular;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import Hero from './Hero'
 import SiteNav from './SiteNav'
 import Social from './Social'
 
@@ -9,16 +7,16 @@ import './style.scss'
 
 function Sidebar() {
   return (
-    <div className="sidebar">
+    <aside className="sidebar">
       <div className="sidebar__container">
-        <Hero />
+        <h2 className="sidebar__title">Quick Links</h2>
         <SiteNav />
         <Social />
         <div className="copyright">
-          <p className="copyright__text">&copy; { new Date().getFullYear() } &mdash; Orest Nowosad</p>
+          <p className="copyright__text">Copyright Orest Nowosad &copy; { new Date().getFullYear() }</p>
         </div>
       </div>
-    </div>
+    </aside>
   )
 }
 

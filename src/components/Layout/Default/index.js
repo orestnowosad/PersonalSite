@@ -10,6 +10,8 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
+import Header from '../../Header'
+
 import brand from '../../../assets/images/brand-icon.png'
 
 import './style.scss'
@@ -46,8 +48,11 @@ function DefaultLayout(props) {
         <meta name="twitter:image" content={ brand } />
         <meta name="twitter:card" content="summary" />
       </Helmet>
-      <div className="container">
-        { children }
+      <Header />
+      <div className="page">
+        <div className="page__container">
+          { children }
+        </div>
       </div>
     </>
   )

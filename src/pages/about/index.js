@@ -36,8 +36,10 @@ function AboutRoute(props) {
       <Sidebar />
       <div className="page">
         <div className="page__container">
-          <h1 className="page__title">Who is this guy?</h1>
-          <p className="page__paragraph">Just your run-of-the-mill software engineer.</p>
+          <article>
+            <h1>Who is this guy?</h1>
+            <p>Just your run-of-the-mill software engineer.</p>
+          </article>
         </div>
       </div>
     </DefaultLayout>
