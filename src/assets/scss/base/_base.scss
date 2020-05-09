@@ -10,21 +10,28 @@ body {
   font-family: $font-base;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-headline;
+  margin: 0;
+}
+
 h1 {
   font-size: 36px;
-  font-family: $font-headline;
   font-weight: $font-weight-bold;
 }
 
 h2 {
   font-size: 28px;
-  font-family: $font-headline;
   font-weight: $font-weight-bold;
 }
 
 h3 {
   font-size: 20px;
-  font-family: $font-headline;
   font-weight: $font-weight-medium;
 }
 
@@ -37,5 +44,15 @@ a {
   &:focus {
     color: $color-lightblue-82s-24l;
     transition: 0.05s ease-in-out;
+  }
+}
+
+article {
+  p {
+    text-align: justify;
+    line-height: 1.6;
+    font-family: $font-article;
+    font-size: 15px;
+    color: $color-coolgrey-20s-25l;
   }
 }

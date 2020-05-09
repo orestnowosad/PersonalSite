@@ -10,9 +10,18 @@
 
   &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 970px;
-    margin: 0 auto;
+    flex-direction: column;
+    margin: 0 16px;
+
+    @include for-size(tablet-portrait-up) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @include for-size(tablet-landscape-up) {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 840px;
+    }
   }
 }

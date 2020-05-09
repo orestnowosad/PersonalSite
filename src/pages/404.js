@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import {
+  Content,
   DefaultLayout,
-  NotFoundError,
   Sidebar
 } from '../components'
 
@@ -32,7 +32,7 @@ function NotFoundRoute(props) {
         <title>404: Page Not Found</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
-      <NotFoundError />
+      <Content error={ 404 } />
       <Sidebar />
     </DefaultLayout>
   )

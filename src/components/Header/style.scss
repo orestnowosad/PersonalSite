@@ -11,8 +11,16 @@
   margin: 16px 0;
 
   &__container {
-    max-width: 970px;
-    margin: 0 auto;
+    margin: 0 16px;
+
+    @include for-size(tablet-portrait-up) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    @include for-size(tablet-landscape-up) {
+      max-width: 840px;
+    }
   } 
 }
 
@@ -23,8 +31,12 @@
   text-decoration: none;
 
   &__image {
-    width: 100px;
+    width: 80px;
     color: $color-coolgrey-24s-16l;
+    
+    @include for-size(tablet-landscape-up) {
+      width: 100px;
+    }
   }
 
   &__text {
