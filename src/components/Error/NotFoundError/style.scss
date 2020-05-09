@@ -3,17 +3,13 @@
  */
 
 @import '../../../assets/scss/colors';
-@import '../../../assets/scss/spacings';
 @import '../../../assets/scss/typography';
 @import '../../../assets/scss/mixins/breakpoints';
 
 
 .error {
-  flex-basis: 65%;
-  
-  &__container {
-    margin-top: $margin-page-top;
-  }
+  width: 100%;
+  margin-right: 32px;
 
   &__title {
     margin: 0;

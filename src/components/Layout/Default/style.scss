@@ -2,13 +2,16 @@
  *  Default Layout
  */
 
-@import '../../../assets/scss/spacings';
 @import '../../../assets/scss/mixins/breakpoints';
+
 
 .page {
   margin-top: 48px;
 
   &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     max-width: 970px;
     margin: 0 auto;
   }

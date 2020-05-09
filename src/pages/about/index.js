@@ -33,15 +33,8 @@ function AboutRoute(props) {
         <title>About | { site.siteMetadata.title }</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
+      <Content />
       <Sidebar />
-      <div className="page">
-        <div className="page__container">
-          <article>
-            <h1>Who is this guy?</h1>
-            <p>Just your run-of-the-mill software engineer.</p>
-          </article>
-        </div>
-      </div>
     </DefaultLayout>
   )
 }

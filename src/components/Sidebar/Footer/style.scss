@@ -1,0 +1,19 @@
+/*
+ *  Footer Component
+ */
+
+@import '../../../assets/scss/colors';
+@import '../../../assets/scss/typography';
+@import '../../../assets/scss/mixins/breakpoints';
+
+
+.footer {
+  margin: 16px 0;
+
+  &__text {
+    margin: 0;
+    line-height: 1.4;
+    color: $color-coolgrey-13s-65l;
+    font-size: 14px;
+  }
+}

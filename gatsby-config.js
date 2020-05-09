@@ -7,16 +7,12 @@ module.exports = {
     author: `Orest Nowosad`,
     siteNav: [
       {
-        label: `About`,
+        label: `About Me`,
         path: `/about`,
       },
       {
-        label: `Blog`,
+        label: `Archive`,
         path: `/blog`
-      },
-      {
-        label: `Work`,
-        path: `/work`
       },
     ],
     social: {

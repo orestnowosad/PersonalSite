@@ -17,7 +17,6 @@ function NotFoundRoute(props) {
       query {
         site {
           siteMetadata {
-            title
             description
           }
         }
@@ -33,8 +32,8 @@ function NotFoundRoute(props) {
         <title>404: Page Not Found</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
-      <Sidebar />
       <NotFoundError />
+      <Sidebar />
     </DefaultLayout>
   )
 }

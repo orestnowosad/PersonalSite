@@ -27,3 +27,15 @@ h3 {
   font-family: $font-headline;
   font-weight: $font-weight-medium;
 }
+
+a {
+  color: $color-lightblue-54s-49l;
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $color-lightblue-82s-24l;
+    transition: 0.05s ease-in-out;
+  }
+}

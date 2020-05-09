@@ -1,23 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import './style.scss'
 
-function Content(props) {
-  const { isIndexPage } = props
-
-  if (isIndexPage) {
-    return (
-      <div className="background"></div>
-    )
-  }
-
+function Content() {
   return (
-    <div className="content">
-      <div className="content__container">
-
-      </div>
-    </div>
+    <main className="content">
+      <h1 className="content__title">Temp</h1>
+    </main>
   )
 }
 

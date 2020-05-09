@@ -24,16 +24,14 @@ function SiteNav() {
 
   return (
     <nav className="site-nav">
+      <h3 className="site-nav__title">Directory</h3>
       <ul className="site-nav__list">
         {siteNav.map(item => (
           <li className="site-nav__list-item" key={ item.path }>
-            <Link
-              to={ item.path }
-              className="site-nav__list-item-link"
-              activeClassName="site-nav__list-item-link site-nav__list-item-link--active"
-            >
-              { item.label }
-            </Link>
+            {item.path.startsWith('/')
+              ? <Link to={ item.path } className="site-nav__list-item-link">{ item.label }</Link>
+              : <a href={ item.path } className="site-nav__list-item-link" target="_blank" rel="noopener noreferrer">{ item.label }</a>
+            }
           </li>
         ))}
       </ul>

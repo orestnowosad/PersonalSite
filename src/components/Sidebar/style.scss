@@ -3,7 +3,6 @@
  */
 
 @import '../../assets/scss/colors';
-@import '../../assets/scss/spacings';
 @import '../../assets/scss/typography';
 @import '../../assets/scss/mixins/breakpoints';
 
@@ -11,23 +10,19 @@
 .sidebar {
   @include for-size(tablet-portrait-up) {
     position: sticky;
-    flex-basis: 30%;
-  }
+    min-width: 220px;
+    width: 220px;
+    padding-left: 32px;
 
-  &__container {
-    .copyright {
-      &__text {
-        color: $color-coolgrey-13s-65l;
-        font-size: 14px;
-      }
+    &::before {
+      background-color: $color-coolgrey-24s-16l;
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
     }
-  }
-
-  &__title {
-    font-size: 20px;
-    margin: 0;
-    margin-bottom: 8px;
-    padding: 0;
-    text-transform: uppercase;
   }
 }
