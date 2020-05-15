@@ -3,10 +3,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import {
-  DefaultLayout,
-  Sidebar
-} from '../../components'
+import { DefaultLayout } from '../../components'
 
 function BlogRoute(props) {
   const { location } = props
@@ -31,7 +28,6 @@ function BlogRoute(props) {
         <title>Blog | { site.siteMetadata.title }</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
-      <Sidebar />
     </DefaultLayout>
   )
 }

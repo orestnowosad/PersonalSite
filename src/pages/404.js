@@ -3,11 +3,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import {
-  Content,
-  DefaultLayout,
-  Sidebar
-} from '../components'
+import { DefaultLayout } from '../components'
 
 
 function NotFoundRoute(props) {
@@ -32,8 +28,14 @@ function NotFoundRoute(props) {
         <title>404: Page Not Found</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
-      <Content error={ 404 } />
-      <Sidebar />
+
+      <article>
+        <h1>Page Not Found</h1>
+        <p>
+          Looks like you've followed a broken link or entered a URL that doesn't exist.
+        </p>
+      </article>
+
     </DefaultLayout>
   )
 }

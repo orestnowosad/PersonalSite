@@ -11,6 +11,7 @@ import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import Header from '../../Header'
+import Sidebar from '../../Sidebar'
 
 import brand from '../../../assets/images/brand-icon.png'
 
@@ -51,7 +52,10 @@ function DefaultLayout(props) {
       <Header />
       <div className="page">
         <div className="page__container">
-          { children }
+          <main className="content">
+            { children }
+          </main>
+          <Sidebar />
         </div>
       </div>
     </>
