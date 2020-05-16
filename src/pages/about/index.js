@@ -29,6 +29,14 @@ function AboutRoute(props) {
         <title>About | { site.siteMetadata.title }</title>
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
+
+      <article>
+        <h1>About Me</h1>
+        <p>
+          Just a straight fucking beauty.
+        </p>
+      </article>
+
     </DefaultLayout>
   )
 }
