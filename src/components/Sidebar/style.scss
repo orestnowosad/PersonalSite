@@ -8,21 +8,11 @@
 
 
 .sidebar {
+  margin: 64px 0;
+
   @include for-size(tablet-landscape-up) {
-    position: sticky;
     min-width: 220px;
     width: 220px;
-    padding-left: 32px;
-
-    &::before {
-      background-color: $color-coolgrey-24s-16l;
-      position: absolute;
-      content: '';
-      width: 1px;
-      height: 100%;
-      top: 0;
-      left: 0;
-      bottom: 0;
-    }
+    margin: 0;
   }
 }

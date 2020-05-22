@@ -6,27 +6,29 @@
 
 
 .page {
-  margin-top: 48px;
+  padding-top: 48px;
 
   &__container {
     display: flex;
     flex-direction: column;
-    margin: 0 16px;
+    padding: 0 20px;
 
     @include for-size(tablet-portrait-up) {
-      max-width: 600px;
+      max-width: 680px;
       margin: 0 auto;
     }
 
     @include for-size(tablet-landscape-up) {
       flex-direction: row;
       justify-content: space-between;
-      max-width: 840px;
+      max-width: 980px;
+      margin-bottom: 128px;
     }
   }
 }
 
 .content {
-  width: 100%;
-  margin-right: 32px;
+  @include for-size(tablet-landscape-up) {
+    width: calc(980px - 220px - 64px);
+  }
 }

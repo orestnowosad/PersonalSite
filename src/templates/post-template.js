@@ -20,7 +20,7 @@ function PostTemplate(props) {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD YYYY")
+            date(formatString: "MMMM DD, YYYY")
             title
           }
           excerpt
@@ -39,13 +39,15 @@ function PostTemplate(props) {
         <meta name="description" content={ site.siteMetadata.title } />
       </Helmet>
 
-      <article>
-        <h1>{ markdownRemark.frontmatter.title }</h1>
-        <p>{ markdownRemark.frontmatter.date }</p>
-        <div 
+      <article className="post">
+        <p className="post__date">{ markdownRemark.frontmatter.date }</p>
+        <h1 className="post__title">{ markdownRemark.frontmatter.title }</h1>
+        <div
+          className="post__content"
           dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
         />
       </article>
+
     </DefaultLayout>
   )
 }

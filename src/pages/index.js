@@ -25,7 +25,7 @@ function IndexRoute(props) {
         ) {
           edges {
             node {
-              excerpt(pruneLength: 300)
+              excerpt
               fields {
                 slug
               }
@@ -51,7 +51,7 @@ function IndexRoute(props) {
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
 
-      <article>
+      <div className="post-list">
         {posts.map((node, index) => {
           const {
             node : {
@@ -67,16 +67,18 @@ function IndexRoute(props) {
           } = node
 
           return (
-            <div>
-              <Link to={`${slug}`} key={index}>
-                <h1>{ title }</h1>
-              </Link>
-              <p>{ date }</p>
-              <p>{ excerpt }</p>
-            </div>
+            <article className="post-list__item">
+              <p className="post-list__item-date">{ date }</p>
+              <h1 className="post-list__item-title">
+                <Link to={`${slug}`} key={index}>
+                  { title }
+                </Link>
+              </h1>
+              <p className="post-list__item-excerpt">{ excerpt }</p>
+            </article>
           )
         })}
-      </article>
+      </div>
 
     </DefaultLayout>
   )
