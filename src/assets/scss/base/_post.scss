@@ -50,7 +50,7 @@
     ol,
     ul {
       @include for-size(phone-only) {
-        padding-left: 16px;
+        padding-left: 24px;
       }
     }
 
@@ -103,6 +103,10 @@
           padding: 8px;
         }
       }
+    }
+
+    pre {
+      border-radius: 4px;
     }
   }
 }

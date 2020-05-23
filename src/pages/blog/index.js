@@ -47,6 +47,12 @@ function BlogRoute(props) {
       <Helmet>
         <title>Archive | { site.siteMetadata.title }</title>
         <meta name="description" content={ site.siteMetadata.description } />
+
+        <meta property="og:title" content={ 'Archive | ' + site.siteMetadata.title } />
+        <meta property="og:description" content={ site.siteMetadata.description } />
+
+        <meta name="twitter:title" content={ 'Archive | ' + site.siteMetadata.title } />
+        <meta name="twitter:description" content={ site.siteMetadata.description } />
       </Helmet>
 
       <article>

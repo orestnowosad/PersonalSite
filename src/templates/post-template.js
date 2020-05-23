@@ -22,6 +22,9 @@ function PostTemplate(props) {
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            featuredImage {
+              base
+            }
           }
           excerpt
           html
@@ -36,7 +39,15 @@ function PostTemplate(props) {
     >
       <Helmet>
         <title>{ markdownRemark.frontmatter.title } | { site.siteMetadata.title }</title>
-        <meta name="description" content={ site.siteMetadata.title } />
+        <meta name="description" content={ markdownRemark.excerpt } />
+
+        <meta property="og:title" content={ markdownRemark.frontmatter.title } />
+        <meta property="og:description" content={ markdownRemark.excerpt } />
+        <meta property="og:image" content={ markdownRemark.frontmatter.featuredImage.base } />
+
+        <meta name="twitter:title" content={ markdownRemark.frontmatter.title } />
+        <meta name="twitter:description" content={ markdownRemark.excerpt } />
+        <meta name="twitter:image" content={ markdownRemark.frontmatter.featuredImage.base } />
       </Helmet>
 
       <article className="post">

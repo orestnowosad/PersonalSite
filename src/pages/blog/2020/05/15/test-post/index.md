@@ -1,6 +1,7 @@
 ---
 title: Test Post
 date: "2020-05-15T19:20:23.145Z"
+featuredImage: temp-image.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque. Nullam ac tortor vitae purus faucibus ornare suspendisse. Commodo ullamcorper a lacus vestibulum sed. Tellus mauris a diam maecenas sed enim ut. Hac habitasse platea dictumst vestibulum rhoncus est. Lorem ipsum dolor sit amet consectetur. Amet aliquam id diam maecenas ultricies mi eget mauris. Nulla facilisi nullam vehicula ipsum a. Tellus in metus vulputate eu. Non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Felis imperdiet proin fermentum leo vel orci porta. Mattis nunc sed blandit libero volutpat sed cras ornare. Purus in massa tempor nec. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Placerat in egestas erat imperdiet sed euismod nisi porta lorem.
@@ -40,11 +41,11 @@ Quote break.
 
 Colons can be used to align columns.
 
-| Tables        | Are           | Cool  |
-| :------------ |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Tables        | Are           | Cool  | AF       |
+|:------------- |:-------------:| -----:| --------:|
+| col 3 is      | right-aligned | $1600 | sdfsdddd |
+| col 2 is      | centered      |   $12 | dfdfddd  |
+| zebra stripes | are neat      |    $1 |  dfdffd  |
 
 There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the 

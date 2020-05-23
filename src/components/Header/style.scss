@@ -16,7 +16,7 @@
     margin: 0 20px;
 
     @include for-size(tablet-portrait-up) {
-      max-width: 700px;
+      max-width: 680px;
       margin: 0 auto;
     }
     
@@ -36,7 +36,7 @@
     width: 80px;
     color: $color-coolgrey-24s-16l;
     
-    @include for-size(tablet-landscape-up) {
+    @include for-size(tablet-portrait-up) {
       width: 100px;
     }
   }
