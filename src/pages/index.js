@@ -3,7 +3,10 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 
-import { DefaultLayout } from '../components'
+import { 
+  Card,
+  DefaultLayout
+} from '../components'
 
 
 function IndexRoute(props) {
@@ -32,6 +35,13 @@ function IndexRoute(props) {
               frontmatter {
                 date(formatString: "MMMM DD, YYYY")
                 title
+                featuredImage {
+                  childImageSharp {
+                    fluid {
+                      originalImg
+                    }
+                  }
+                }
               }
             }
           }
@@ -67,21 +77,27 @@ function IndexRoute(props) {
               },
               frontmatter : {
                 date,
-                title
+                title,
+                featuredImage : {
+                  childImageSharp : {
+                    fluid : {
+                      originalImg
+                    }
+                  }
+                }
               }
             }
           } = node
 
           return (
-            <article className="post-list__item">
-              <p className="post-list__item-date">{ date }</p>
-              <h1 className="post-list__item-title">
-                <Link to={`${slug}`} key={index}>
-                  { title }
-                </Link>
-              </h1>
-              <p className="post-list__item-excerpt">{ excerpt }</p>
-            </article>
+            <Card
+              slug={slug}
+              index={index}
+              date={date}
+              title={title}
+              excerpt={excerpt}
+              featuredImage={originalImg}
+            />
           )
         })}
       </div>
