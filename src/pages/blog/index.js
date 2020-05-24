@@ -55,31 +55,32 @@ function BlogRoute(props) {
         <meta name="twitter:description" content={ site.siteMetadata.description } />
       </Helmet>
 
-      <article>
-        <h1>Archive</h1>
-        <p>
-          Archived posts.
-        </p>
-        <div>
-          {posts.map((node, index) => {
-            const {
-              node : {
-                fields : {
-                  slug
-                },
-                frontmatter : {
-                  date,
-                  title
+      <article className="post">
+        <h1 className="post__title">Archive</h1>
+        <div className="post__content">
+          <ul>
+            {posts.map((node, index) => {
+              const {
+                node : {
+                  fields : {
+                    slug
+                  },
+                  frontmatter : {
+                    date,
+                    title
+                  }
                 }
-              }
-            } = node
-            
-            return (
-              <Link to={`${slug}`} key={index}>
-                {date} &middot; {title}
-              </Link>
-            )
-          })}
+              } = node
+              
+              return (
+                <li>
+                  <Link to={`${slug}`} key={index}>
+                    {date} &middot; {title}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </article>
 

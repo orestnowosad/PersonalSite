@@ -23,7 +23,11 @@ function PostTemplate(props) {
             date(formatString: "MMMM DD, YYYY")
             title
             featuredImage {
-              base
+              childImageSharp {
+                fluid {
+                  originalImg
+                }
+              }
             }
           }
           excerpt
@@ -43,11 +47,11 @@ function PostTemplate(props) {
 
         <meta property="og:title" content={ markdownRemark.frontmatter.title } />
         <meta property="og:description" content={ markdownRemark.excerpt } />
-        <meta property="og:image" content={ markdownRemark.frontmatter.featuredImage.base } />
+        <meta property="og:image" content={ markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.originalImg } />
 
         <meta name="twitter:title" content={ markdownRemark.frontmatter.title } />
         <meta name="twitter:description" content={ markdownRemark.excerpt } />
-        <meta name="twitter:image" content={ markdownRemark.frontmatter.featuredImage.base } />
+        <meta name="twitter:image" content={ markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.originalImg } />
       </Helmet>
 
       <article className="post">

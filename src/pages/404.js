@@ -29,11 +29,13 @@ function NotFoundRoute(props) {
         <meta name="description" content={ site.siteMetadata.description } />
       </Helmet>
 
-      <article>
-        <h1>Page Not Found</h1>
-        <p>
-          Looks like you've followed a broken link or entered a URL that doesn't exist.
-        </p>
+      <article className="post">
+        <h1 className="post__title">Page Not Found</h1>
+        <div className="post__content">
+          <p>
+            Looks like you've followed a broken link or entered a URL that doesn't exist.
+          </p>
+        </div>
       </article>
 
     </DefaultLayout>

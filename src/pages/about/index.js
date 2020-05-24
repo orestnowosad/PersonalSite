@@ -36,11 +36,13 @@ function AboutRoute(props) {
         <meta name="twitter:description" content={ site.siteMetadata.description } />
       </Helmet>
 
-      <article>
-        <h1>About Me</h1>
-        <p>
-          Just a straight fucking beauty.
-        </p>
+      <article className="post">
+        <h1 className="post__title">About Me</h1>
+        <div className="post__content">
+          <p>
+            Just a straight fucking beauty.
+          </p>
+        </div>
       </article>
 
     </DefaultLayout>
