@@ -1,9 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
 import { DefaultLayout } from '../../components'
+
+import headshot from '../../../static/headshot.jpg'
 
 
 function AboutRoute(props) {
@@ -39,8 +41,19 @@ function AboutRoute(props) {
       <article className="post">
         <h1 className="post__title">About Me</h1>
         <div className="post__content">
+          <h3>Hey, I'm Orest.</h3>
+          <ol>
+            <li>I write code.</li>
+            <li>Currently helping small businesses develop, and grow, their <a href="https://explore.agency/" target="_blank" rel="noopener noreferrer">online brands</a>.</li>
+            <li>Trying to organize my <Link to="/blog">thoughts</Link>.</li>
+            <li>Here's my <Link to="/me">mugshot</Link>.</li>
+          </ol>
+          <h3>Want to get in touch?</h3>
           <p>
-            Just a straight fucking beauty.
+            Just email me at <a href="mailto:nowosad.orest@gmail.com">nowosad.orest@gmail.com</a>. Or message 
+            me on <a href="https://linkedin.com/in/orestnowosad" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+            Or <a href="https://twitter.com/orestnowosad" target="_blank" rel="noopener noreferrer">tweet</a> at me.
+            I'm always hungry for conversation.
           </p>
         </div>
       </article>
