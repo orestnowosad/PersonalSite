@@ -19,7 +19,7 @@ function Card(props) {
       key={index}
     >
       <article className="card">
-        <img src={ featuredImage } alt="Post featured image" />
+        <img src={ featuredImage } alt="Featured" />
         <div className="card__details">
           <p className="card__details__date">{ date }</p>
           <h1 className="card__details__title">{ title }</h1>

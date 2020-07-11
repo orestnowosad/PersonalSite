@@ -17,7 +17,7 @@
     font-size: 48px;
 
     @include for-size(phone-only) {
-      font-size: 36px;
+      font-size: 28px;
     }
   }
 
@@ -26,6 +26,19 @@
     padding: 16px 0;
     border-top: 1px solid $color-coolgrey-16s-82l;
     border-bottom: 1px solid $color-coolgrey-16s-82l;
+    
+    @include for-size(tablet-landscape-up) {
+      border-bottom: none;
+    }
+
+    &__image {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 400px;
+      }
+    }
 
     h2 {
       font-weight: $font-weight-bold;
@@ -37,6 +50,11 @@
       margin: 32px 0 16px;
     }
 
+    h4 {
+      font-weight: $font-weight-bold;
+      margin: 16px 0;
+    }
+
     p {
       text-align: justify;
       line-height: 1.6;
@@ -44,6 +62,10 @@
       font-weight: $font-weight-light;
       font-size: 15px;
       color: $color-coolgrey-20s-25l;
+      margin-bottom: 32px;
+    }
+
+    img {
       margin-bottom: 32px;
     }
 
@@ -65,6 +87,10 @@
       p {
         margin-bottom: 8px;
       }
+    }
+
+    strong {
+      font-weight: 900;
     }
 
     blockquote {
