@@ -75,7 +75,7 @@ function BlogRoute(props) {
               return (
                 <li>
                   <Link to={`${slug}`} key={index}>
-                    {date} &middot; {title}
+                    {date} - {title}
                   </Link>
                 </li>
               )
@@ -83,7 +83,6 @@ function BlogRoute(props) {
           </ul>
         </div>
       </article>
-
     </DefaultLayout>
   )
 }
