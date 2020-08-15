@@ -50,7 +50,7 @@ function ReadingRoute(props) {
           <ul>
             <li><a href="https://waitbutwhy.com/2014/05/fermi-paradox.html" target="_blank" rel="noopener noreferrer">The Fermi Paradox</a>; Tim Urban</li>
             <li><a href="https://www.theatlantic.com/magazine/archive/2020/07/trumps-collaborators/612250/" target="_blank" rel="noopener noreferrer">History Will Judge the Complicit</a>; Anne Applebaum</li>
-            <li><a href="https://www.robinwieruch.de/lessons-learned-deep-work-flow" target="_blank" rel="noopener noreferrer">(Deep Work) => Flow - A Proven Path to Satisfaction</a>; Robin Wieruch</li>
+            <li><a href="https://www.robinwieruch.de/lessons-learned-deep-work-flow" target="_blank" rel="noopener noreferrer">(Deep Work) =&gt; Flow - A Proven Path to Satisfaction</a>; Robin Wieruch</li>
             <li><a href="https://ncase.me/trust/" target="_blank" rel="noopener noreferrer">The Evolution of Trust</a>; Nicky Case</li>
             <li><a href="https://www.nybooks.com/daily/2015/06/26/reading-is-forgetting/" target="_blank" rel="noopener noreferrer">Reading is Forgetting</a>; Tim Parks</li>
           </ul>
