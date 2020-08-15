@@ -14,6 +14,10 @@ module.exports = {
         label: `Archive`,
         path: `/blog`
       },
+      {
+        label: 'Reading',
+        path: '/reading'
+      },
     ],
     social: {
       email: `mailto:nowosad.orest@gmail.com`,

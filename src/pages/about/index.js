@@ -5,8 +5,6 @@ import { graphql, Link, useStaticQuery } from 'gatsby'
 
 import { DefaultLayout } from '../../components'
 
-import headshot from '../../../static/headshot.jpg'
-
 
 function AboutRoute(props) {
   const { location } = props
