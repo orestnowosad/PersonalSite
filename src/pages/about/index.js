@@ -43,7 +43,7 @@ function AboutRoute(props) {
           <ol>
             <li>I write code.</li>
             <li>Currently helping small businesses develop, and grow, their <a href="https://explore.agency/" target="_blank" rel="noopener noreferrer">online brands</a>.</li>
-            <li>Trying to organize my <Link to="/blog">thoughts</Link>.</li>
+            <li>I sometimes enjoy <Link to="/blog">writing</Link>.</li>
             <li>Here's my <Link to="/me">mugshot</Link>.</li>
           </ol>
           <h3>Want to get in touch?</h3>
