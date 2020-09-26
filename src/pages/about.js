@@ -25,11 +25,6 @@ const AboutPage = () => (
           and cost-efficient websites that fit their needs. I enjoy empowering the little guy, and 
           technology is the way that I do that.
         </p>
-        <div className={styles.resume}>
-          <a target="_blank" rel="noopener noreferrer" href={resume}>
-            Resume
-          </a>
-        </div>
       </div>
     </div>
     <hr className={styles.divider} />
@@ -57,11 +52,11 @@ const AboutPage = () => (
       <div className={styles.postings}>
         <div className={styles.posting}>
           <div>
-            <p className={styles.title}>Co-Founder & Web Developer</p>
+            <p className={styles.title}>Co-Founder & Technical Director</p>
             <p className={styles.location}>Explore Agency &mdash; Toronto, Ontario</p>
           </div>
           <div>
-            <p className={styles.date}>July 2019 &mdash; Present</p>
+            <p className={styles.date}>July 2018 &mdash; Present</p>
           </div>
         </div>
       </div>
@@ -72,15 +67,6 @@ const AboutPage = () => (
         <h3 className={styles.heading}>Extracurriculars</h3>
       </div>
       <div className={styles.postings}>
-        <div className={styles.posting}>
-          <div>
-            <p className={styles.title}>Adaptive Cruise Control Lead</p>
-            <p className={styles.location}>McMaster Solar Car &mdash; Hamilton, Ontario</p>
-          </div>
-          <div>
-            <p className={styles.date}>June 2017 &mdash; October 2017</p>
-          </div>
-        </div>
         <div className={styles.posting}>
           <div>
             <p className={styles.title}>Google igniteCS Mentor</p>
